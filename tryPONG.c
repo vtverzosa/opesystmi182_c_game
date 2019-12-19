@@ -37,4 +37,31 @@ main () {
       b.x=b.movhor ? b.x+1 : b.x-1;
       b.y=b.movver ? b.y+1 : b.y-1;
 
+      if (b1.y<=1)
+        b1.y=scr.y-2;
+      if (b1.y>=scr.y-1)
+        b1.y=2;
+      if (b2.y<=1)
+        b2.y=scr.y-2;
+      if (b2.y>=scr.y-1)
+        b2.y=2;
+    }
+    switch (getch()) {
+      case KEY_DOWN: b1.y++; break;
+      case KEY_UP:   b1.y--; break;
+      case 'q':      b2.y--; break;
+      case 'a':      b2.y++; break;
+      case 'p':      getchar(); break;
+      case 0x1B:    endwin(); end++; break;
+    }
+    erase();
+    mvprintw(2,scr.x/2-2,"%i | %i",b1.c,b2.c);
+    mvvline(0,scr.x/2,ACS_VLINE,scr.y);
+    attron(COLOR_PAIR(1));
+    mvprintw(b.y,b.x,"o");
+    for(i=-1;i<2;i++){
+      mvprintw(b1.y+i,b1.x,"|");
+      mvprintw(b2.y+i,b2.x,"|");}
+    attroff(COLOR_PAIR(1));
+  }
 }
