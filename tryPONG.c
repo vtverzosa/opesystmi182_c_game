@@ -5,7 +5,7 @@ main () {
 	object scr; int i = 0, cont = 0; bool end = false;
 	initscr();
 	start_color();
-	init_pair(1, COLOR_YELLOW, COLOR_WHITE);
+	init_pair(1, COLOR_YELLOW, COLOR_PINK);
 	keypad(stdscr,true);
   	noecho();
   	curs_set(0);
