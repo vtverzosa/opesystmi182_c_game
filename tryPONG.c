@@ -23,4 +23,18 @@ main () {
                "\t \t\t\tPush ANY key to start, 'p' for pause and ESC to quit" ); 
   getch();
 
+
+        if ((b.y==b1.y-1)||(b.y==b2.y-1)) {
+          b.movver=false;
+        } else if ((b.y==b1.y+1)||(b.y==b2.y+1)) {
+          b.movver=true;
+        } else if ((b.y != b1.y) && (b.y != b2.y)) {
+          (b.x>=scr.x-2) ? b1.c++: b2.c++;
+          b.x=scr.x/2;
+          b.y=scr.y/2;
+        }
+      }
+      b.x=b.movhor ? b.x+1 : b.x-1;
+      b.y=b.movver ? b.y+1 : b.y-1;
+
 }
