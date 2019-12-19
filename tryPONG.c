@@ -6,5 +6,21 @@ main () {
 	initscr();
 	start_color();
 	init_pair(1, COLOR_YELLOW, COLOR_WHITE);
+	keypad(stdscr,true);
+  	noecho();
+  	curs_set(0);
+  	getmaxyx(stdscr,scr.y,scr.x);
+  	object b1={scr.x-2,scr.y/2,0,false,false},b2={1,scr.y/2,0,false,false},b={scr.x/2,scr.y/2,0,false,false};
+  	mvprintw(4,0,"\t           oooooooooo                                        \n"
+               	     "\t           888    888  ooooooo    ooooooo    oooooooo8       \n"
+               	     "\t           888oooo88 888     888 888   888  888    88o       \n"
+                     "\t           888       888     888 888   888   888oo888o       \n"
+                     "\t          o888o        88ooo88  o888o o888o 888     888      \n"
+                     "\t                                             888ooo888     \n\n"
+               "\t Any questions please send me at vicente.bolea@gmail.com     \n"
+               "\t \t\t\tPlayer 1 your controls are 'a' and 'q'                \n"
+               "\t \t\t\tPlayer 2 your controls are the arrows of the keyboard \n"
+               "\t \t\t\tPush ANY key to start, 'p' for pause and ESC to quit" ); 
+  getch();
 
 }
