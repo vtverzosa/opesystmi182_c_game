@@ -49,10 +49,10 @@ int main () {
     mvprintw(5, (screenx + strlen(" 888    888  ooooooo    ooooooo    oooooooo8 "))/2, " 888    888  ooooooo    ooooooo    oooooooo8 ");
     mvprintw(6, (screenx + strlen(" 888oooo88 888     888 888   888  888    88o "))/2, " 888oooo88 888     888 888   888  888    88o ");
     mvprintw(7, (screenx + strlen(" 888       888     888 888   888   888oo888o "))/2, " 888       888     888 888   888   888oo888o ");
-    mvprintw(8, (screenx + strlen(" 888       888     888 888   888   888       "))/2, " 888       888     888 888   888   888oo888o ");
-    mvprintw(9, (screenx + strlen(" 888       888     888 888   888   888oo888o "))/2, " 888       888     888 888   888   888oo888o ");
+    mvprintw(8, (screenx + strlen(" 888       888     888 888   888   888       "))/2, " 888       888     888 888   888   888       ");
+    mvprintw(9, (screenx + strlen(" 888       888     888 888   888   888oo888o "))/2, " 888       888     888 888   888   888oo888o");
     mvprintw(10, (screenx + strlen("o888o       88ooo88  o888o o888o 888     888"))/2, "o888o        88ooo88  o888o o888o 888     888");
-    mvprintw(11, (screenx + strlen("                                   888ooo888 "))/2, "                                   888ooo888 ");
+    mvprintw(11, (screenx + strlen("                                   888ooo888 "))/2, "                                   888ooo888");
 
     mvprintw(13, (screenx + strlen("Any questions please send me at vtverzosa@student.apc.edu.ph"))/2, "Any questions please send me at vtverzosa@student.apc.edu.ph");
     mvprintw(14, (screenx + strlen("Controls for Player 1 are 'w' and 's'"))/2, "Controls for Player 1 are 'w' and 's'");
