@@ -18,7 +18,7 @@ int main() {
     initscr();
     cbreak();
     start_color();
-    init_pair(1, COLOR_MAGENTA, COLOR_CYAN);
+    init_pair(1, COLOR_MAGENTA, COLOR_BLACK);
     keypad(stdscr,true);
     noecho();
     curs_set(0);
@@ -46,14 +46,14 @@ int main() {
     bool bmovhor = false;
     bool bmovver = false;
 
-    mvprintw(4, (scrx - strlen(" oooooooooo                                  "))/2, " oooooooooo                                  ");
-    mvprintw(5, (scrx - strlen(" 888    888  ooooooo    ooooooo    oooooooo8 "))/2, " 888    888  ooooooo    ooooooo    oooooooo8 ");
-    mvprintw(6, (scrx - strlen(" 888oooo88 888     888 888   888  888    88o "))/2, " 888oooo88 888     888 888   888  888    88o ");
-    mvprintw(7, (scrx - strlen(" 888       888     888 888   888   888oo888o "))/2, " 888       888     888 888   888   888oo888o ");
-    mvprintw(8, (scrx - strlen(" 888       888     888 888   888   888oo888o "))/2, " 888       888     888 888   888   888oo888o ");
-    mvprintw(9, (scrx - strlen(" 888       888     888 888   888   888oo888o "))/2, " 888       888     888 888   888   888oo888o ");
-    mvprintw(10, (scrx - strlen("o888o        88ooo88  o888o o888o 888     888"))/2, "o888o        88ooo88  o888o o888o 888     888");
-    mvprintw(11, (scrx - strlen("                                   888ooo888 "))/2, "                                   888ooo888 ");
+    mvprintw(4, (scrx - strlen  ("o88888888o                                    "))/2, "o88888888o                                    ");
+    mvprintw(5, (scrx - strlen  (" 888    88o  8888888   o8888888o    o888888o  "))/2, " 888    88o  8888888   o8888888o    o888888o  ");
+    mvprintw(6, (scrx - strlen  (" 88888888o 888     888  888   888  o88    88o "))/2, " 88888888o 888     888  888   888  o88    88o ");
+    mvprintw(7, (scrx - strlen  (" 888       888     888  888   888   o888888o  "))/2, " 888       888     888  888   888   o888888o  ");
+    mvprintw(8, (scrx - strlen  (" 888       888     888  888   888   888       "))/2, " 888       888     888  888   888   888       ");
+    mvprintw(9, (scrx - strlen  (" 888       888     888  888   888   o8888888o "))/2, " 888       888     888  888   888   o8888888o ");
+    mvprintw(10, (scrx - strlen ("o888o        8888888   o888o o888o o88     88o"))/2, "o888o        8888888   o888o o888o o88     88o");
+    mvprintw(11, (scrx - strlen ("                                    o8888888o "))/2, "                                    o8888888o ");
 
     mvprintw(13, (scrx - strlen("Any questions please send me at vtverzosa@student.apc.edu.ph"))/2, "Any questions please send me at vtverzosa@student.apc.edu.ph");
     mvprintw(14, (scrx - strlen("Controls for Player 1 are 'w' and 's'"))/2, "Controls for Player 1 are 'w' and 's'");
