@@ -18,7 +18,7 @@ int main() {
     initscr();
     cbreak();
     start_color();
-    init_pair(1, COLOR_MAGENTA, COLOR_BLACK);
+    init_pair(1, COLOR_MAGENTA, COLOR_CYAN);
     keypad(stdscr,true);
     noecho();
     curs_set(0);
